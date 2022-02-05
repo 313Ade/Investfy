@@ -12,6 +12,11 @@ body{
     font-family: madetommy;
 }
 
+@font-face {
+    font-family: madetommy;
+    src: url(/assets/css/made_tommy/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+
 nav{
     padding: 27px;
     padding-top: 20px !important;
@@ -182,10 +187,7 @@ nav{
         display: none;
     }
 }
-@font-face {
-    font-family: madetommy;
-    src: url(/assets/css/made_tommy/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
-}
+
 /* .login-header {
     position: absolute;
     top: 125px;
