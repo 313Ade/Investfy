@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Architect Template Page</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/Architect Template.css">
+
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><b>BR</b> Architects</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+
+        
+          <header class="center-display carousel"  id="Home">
+            <img class="image-fluid" src="/assets/img/architect.jpg" alt="Home Image">
+            <div class="mx-auto">
+                <h1 class="carousel-caption"><span class="font-weight-bolder bg-dark p-3"><b>BR</b></span> <span class="text-light">Architects</span>
+
+                </h1>
+            </div>
+           </header>
+
+        <div class="container" id="projects">
+            <h3 class="heading">Projects</h3>
+            <div class="row">
+                <div class="col-md-6" style="background-color: rebeccapurple; height: 50px;">
+
+                </div>
+                <div class="col-md-6" style="background-color: red; height: auto;">
+
+                </div>
+                <div class="col-md-6" style="background-color: red; height: 50px;">
+
+                </div>
+                <div class="col-md-6" style="background-color: red; height: auto;">
+
+                </div>
+
+            </div>
+        </div>
+        <center>
+            <div id="mainwatch">
+                <div class="maintime">
+                    <span id="minute">00</span>
+                    <span id="second">00</span>
+                    <span id="millisecond">00</span>
+                </div>
+                <br />
+                <button id="start" class="btn btn-primary" onclick="start();">Start</button>
+                <button id="stop" class="btn btn-danger" onclick="stop();">Stop</button>
+
+            </div> 
+        </center>
+        <center>
+            <p>This is yet another attempt at learning JavaScript</p>
+            <p>
+                <script>
+                    document.write('The current date and time is ');
+                    var time = new Date();
+                    document.write(time);
+                </script>
+            </p>
+        </center>
+   
+
+
+       
+    </body>
+
+
+
+    <script src="/assets/js/index.js"></script>
+</html>
+
+
+
+
+
+
+
+
+   <!-- <div class="row">
+            <div class="col-md-5" style="background-color: rosybrown;">
+                <p></p>
+            </div>
+            <div class="col-md-6 offset-md-1" style="background-color: red;">
+                <p></p>
+            </div>
+        </div>  -->
+        <!-- <div>
+            <h1>Labels:<span class="badge bg-dark rounded-pill">new</span></h><br>
+            <button type="button" class="btn btn-danger"> Primary <span class="badge">33</span></span> </button>
+            <button type="button" class="btn btn-danger">Danger <span class="badge bg-dark">5</span></button>  
+            <a href="#">News <span class="badge bg-dark">4</span></a>
+            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+            <span class="badge bg-primary">Pri</span><br>
+
+            <div style="margin-top: 70px;" class="spinner-grow text-danger m-5" role="status" >
+                <span class="sr-only">Calm down</span>
+                
+              
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="switch" aria-hidden="true"></span>
+           Loading
+        </button>
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button> -->

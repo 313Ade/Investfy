@@ -1,0 +1,23 @@
+/* Penguin Work */
+:root {
+    --penguin-size: 200px;
+    --penguin-skin: black;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+}
+
+.penguin {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 10%;
+    width: var(--penguin-size);
+    height: var(--penguin-size);
+}
+.right-hand {
+    top: 5%;
+    left: 25%;
+    background: var(--penguin-skin);
+    width: 30%;
+    height: 60%;
+}

@@ -1,0 +1,60 @@
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.center-display img{
+    width: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+}
+.bg-dark:first-child{
+    background-color: rgba(0, 0, 0, 0.6) !important;   
+}
+
+#caption {
+    background-color: #000;
+    padding: 0px;
+}
+
+#projects {
+    margin-top: 50px;
+}
+.row div {
+    margin: 10px 5px 10px 10px;
+}
+
+#mainwatch {
+    width: 300px;
+    margin: 100px auto;
+    padding: 60px 50px 100px;
+    text-align: center;
+    font-size: 40px;
+    background: lavender;
+    border-radius: 20px;
+    box-shadow: 6px -6px 8px #9d9d9d;
+}
+
+#mainwatch span {
+    background: lavender;
+    color: #0776de;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 3px;
+    display: inline-block;
+    border-radius: 25px;
+}
+/* 
+#mainwatch button {
+    font-size: 22px;
+    border: none;
+    background-color: #2e80b3;
+    color: white;
+    width: 140px;
+    height: 55px;
+    transition: .3s;
+    border-radius: 33px;
+} */
