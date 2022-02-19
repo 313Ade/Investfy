@@ -1,7 +1,8 @@
 html {
     width: 100%;
     height: 100%;
-    overflow-x: auto;    
+    overflow-x: hidden;  
+    
 }
 body {
     font-family: madetommy;
@@ -12,6 +13,15 @@ body {
     src: url(assets/css/made_tommy/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf);
 }
 
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+.nav-link {
+    color: lavender;
+}
+
+
+.navbar-toggler { border-color: #008000; }
 
 .bgimage {
     height: 100vh;
@@ -35,4 +45,64 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: yellow;
+}
+
+.AboutImage {
+    width: 100%;
+}
+
+.servicesText.card {
+    height: 280px;
+    cursor: default;
+}
+.servicesIcon {
+    font-size: 35px;
+    text-align: right;
+    width: 100%;
+}
+.card-title {
+    text-align: left;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+
+.servicesText:hover {
+    border-left: 5px solid #008000;
+}
+
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+#contact {
+    padding-bottom: 4rem;
+    background-color: lavender;
+}
+
+
+form {
+    font-family: monospace;
+}
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fab {
+    color: black;
+}
+
+#footer {
+    background-color: #808080;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }

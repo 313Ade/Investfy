@@ -459,3 +459,8 @@ h3 {
 .c1:hover {
     animation: spin 8s infinite linear;
 }
+
+#make-enquiry {
+    width: 100%;
+}
+
