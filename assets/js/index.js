@@ -1,58 +1,22 @@
-// var timer = 0;
-// var timerInterval;
-// var ms = document.getElementById('milliseconds');
-// var second = document.getElementById('second');
-// var minute = document.getElementById('minute');
+//back to top button
+//define variables
+// calculate the window height
+// add event listeners
 
-// function start() {
-//     stop()
-//     timerInterval = setInterval(function() {
-//         timer += 1/60;
-//         msVal = Math.floor((timer - Math.floor(timer))*100);
-//         secondVal = Math.floor(timer) - Math.floor(timer/60) * 60;
-//         minuteVal = Math.floor(timer/60);
-//         ms.innerHTML = msVal < 10 ? '0' + secondVal.toString() : msVal;
-//         second.innerHTML = secondVal < 10 ? '0' + secondVal.toString() : secondVal;
-//         minute.innerHTML = minuteVal < 10 ? '0' + minuteVal.toString() : minuteVal;
+var button = document.getElementById('back-to-top'),
+    body   = document.body,
+    docElem = document.documentElement,
+    offset = 100,
+    scrollPos,
+    docHeight;
 
-//     }, 1000/60);
-// }
-
-// function stop() {
-//     clearInterval(timerInterval);
-// }
-
-
-var timer = 0;
-var timerInterval;
-var ms = document.getElementById('millisecond');
-var second = document.getElementById('second');
-var minute = document.getElementById('minute');
-
-function start() {
-  stop();
-  timerInterval = setInterval(function() {
-    timer += 1/60;
-    msVal = Math.floor((timer - Math.floor(timer))*100);
-    secondVal = Math.floor(timer) - Math.floor(timer/60) * 60;
-    minuteVal = Math.floor(timer/60);
-    ms.innerHTML = msVal < 10 ? "0" + msVal.toString() : msVal;
-    second.innerHTML = secondVal < 10 ? "0" + secondVal.toString() : secondVal;
-    minute.innerHTML = minuteVal < 10 ? "0" + minuteVal.toString() : minuteVal;
-  }, 1000/60);
+//
+docHeight = Math.max(body.scrollHeight, body.offsetHeight, docElem.clientHeight, docElem.scrollHeight, docElem.offsetHeight);
+if (docHeight != 'undefined') {
+    offset = docHeight / 4;
 }
 
-function stop() {
-  clearInterval(timerInterval);
-}
-
-//object example
-var person = {
-  name = 'Jon Doe',
-  age: 25,
-  isMale: true,
-  personality: ['patient', 'loyal', 'happy'],
-  company: {name: 'edX', id: 2202}
-}
-
-
+window.addEventListener('scroll', function (event){
+    scrollPos = body.scrollTop || docElem.scrollTop;
+    button.className = (scrollPos > offset)  ? 'visible' : '';
+});
