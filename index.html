@@ -48,7 +48,7 @@
                     </li>
     
                     <li class="nav-item">
-                        <a href="#" class="nav-link">FAQs</a>
+                        <a href="#FAQs" class="nav-link">FAQs</a>
                     </li>
     
                     <li class="nav-item">
@@ -59,7 +59,7 @@
                         <a class="nav-link" href="/gallery.html">Gallery</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item" id="nav-button">
                         <button class="btn btn-success">
                             <a href="/create-account.html" class="nav-link text-white">Create Account</a>
                         </button>
@@ -80,6 +80,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- HEADER -->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6 col-md-12 col-xl-6 home-left">
@@ -96,13 +98,14 @@
 
                 </div>
                 <div class="col-sm-6 col-xl-6 home-right">
-                    <img src="/assets/img/userCycle.svg">
+                    <img src="/assets/img/main.svg">
                 </div>
 
             </div>
 
         </div>
 
+        <!-- FEATURES SECTION -->
         <div class="container feature" id="Features">
             <div class="row">
                 <h2 class="feature-header">Features</h2>
@@ -111,7 +114,7 @@
                 <div class="col-sm-4 col-xl-4  wow slideInLeft" data-wow-duration= "2s">
                     <img src="/assets/img/features-image.svg" class="img-fluid feature-left">
                 </div>
-                <div class="col-sm-8 col-xl-8 feature-right">
+                <div class="col-sm-12 col-md-12 col-xl-8 feature-right">
                     <div class="feature-list">
                         <h2>
                             Easy Payment Transactions
@@ -149,13 +152,14 @@
             </div>
         </div>
         
-        <div class="container feature">
+        <!-- FAQS SECTION -->
+        <div class="container feature" id="FAQs">
             <div class="row">
                 <h2 class="feature-header">FAQs</h2>
             </div>
 
             <div class="row">
-                <div class="col-sm-8 col-xl-8" id="feature-right">
+                <div class="col-sm-12 col-xl-8 col-md-12" id="feature-right">
                     <div class="feature-list">
                         <h2>What is Investfy</h2>
                         <p class="text-muted">
@@ -206,28 +210,34 @@
                 </div> -->
             </div>
         </div>
-        <div class="container-fluid feature">
-          
-         <div class="row">
-             <h2 class="feature-header">More Questions</h2>
-         </div>
-         
-         <div class="container mt-3">
-            <form class="enquiry-form make-enquiry">
-                <label for="make-enquiry"></label>
-                <textarea class="form-control mt-3" rows="5" id="comment" name="text">
-
-                </textarea>
-            </form>
-            <button type="submit" class="btn btn-success">Submit</button>
-            <a id="back-to-top" href="#">Back to Top</a>
-         </div>
-        </div>
+   
         
+            
+        <div class="container-fluid feature questions">
+          
+            <div class="row">
+                <h2 class="feature-header">More Questions</h2>
+            </div>
+            
+            <div class="container mt-3" id="enquiry">
+               <form class="enquiry-form" id="make-enquiry" >
+                   <label for="make-enquiry"></label>
+                   <textarea class="form-control mt-3" rows="2" id="comment" name="text">
+   
+                   </textarea>
+               </form>
+               <button type="submit" class="btn btn-success">Send</button>
+               <a id="back-to-top" href="#">Back to Top</a>
+            </div>
+            
+        </div>
 
+        
     </body>
 
-
+    
     <script src="/assets/js/index.js"></script>
     
 </html>
+
+
